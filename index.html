@@ -11,7 +11,7 @@
     <link rel="icon" href="https://images.unsplash.com/photo-1598515213381-80d77efcdf32?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGl6emElMjBpY29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
 </head>
 <body>
-    <section class=" container landing">
+    <section class="landing">
         <div id="overlay">
             <nav class=" navbar navbar-expand-sm bg-dark text-capitalize text-monospace  navbar-dark fixed-top">
                 <a class="navbar-brand" href="#">Benny's Pizza</a>
@@ -42,7 +42,7 @@
                   </div>
                 </div>
               </div>
-              <div class="arrow bounce"> <a href="#variety"> <img src="images/arrow.ico" alt=" arrow"width="40px"></a></div>
+              <div class=" bg-white arrow bounce"> <a href="#variety"> <img src="https://cdn.icon-icons.com/icons2/1674/PNG/512/arrowdownward_111020.png" alt=" arrow"width="40px"></a></div>
           </div>
         </div>
             
@@ -119,16 +119,16 @@
       <div class="container-fluid order" id="make-order">
         <div class="order-overlay">
           <div class="controls-top text-center" id="Order-now"> 
-            <h2>Order Here</h2>
+            <h2>Place Your Order Here</h2>
           </div>
-          <h2>Order your pizza here and we will deliver it to you at your door step!</h2>
+          <h2>Delivery will be made ASAP!</h2>
           <div class="row">
               <div class="col-sm-5">
                 <form action="">
-                    <label for="select">Select Your Flavor</label>
+                    <label for="select">What's Your Taste</label>
                     <select class="browser-default custom-select custom-select-md mb-3 name">
                       <!-- <option selected value="choose">Choose your flavor</option> -->
-                      <option value="Chicken Tikka">Chicken Tikka</option>
+                      <option value="Chicken Tikka">Cheese Pizza</option>
                       <option value="PeriPeri Pizza">PeriPeri Pizza</option>
                       <option value="Raspberry Dessert Pizza">Raspberry Dessert Pizza</option>
                       <option value="Chicken Alfredo Pizza">Chicken Alfredo Pizza</option>
@@ -146,16 +146,16 @@
                     <select class="browser-default custom-select custom-select-md mb-3" id="crust">
                         <option selected value="0">Type Of crust</option>
                       <option value="Crispy">Crispy -- sh. 400</option>
-                      <option value="Stuffed">Stuffed -- sh. 350</option>
-                      <option value="Gluten-free">Gluten-free-- sh. 580</option>
+                      <option value="Stuffed">Stuffed -- sh. 650</option>
+                      <option value="Gluten-free">Gluten-free-- sh. 880</option>
                     </select>
                   <label for="Toppings">Select Your Toppings at 100 kes  each</label><br>
                     <div class="custom-control custom-checkbox custom-control-inline">
-                      <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
+                      <input type="checkbox" class="custom-control-input" id="beef" value="beef" name="toppings">
                       <label class="custom-control-label" for="Beef">Beef</label>
                     </div>
                     <div class="custom-control custom-checkbox custom-control-inline">
-                      <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
+                      <input type="checkbox" class="custom-control-input" id="Pineapples" value="Pineapples" name="toppings">
                       <label class="custom-control-label" for="pinneapples">Pineapples</label>
                     </div>
                     <div class="custom-control custom-checkbox custom-control-inline">
@@ -199,7 +199,7 @@
                     </table>
                     <p id="pizzatotal"></p>
                     <p id="totalbill"></p> 
-                    <p id="addedprice">Delivery will cost sh. 100</p>
+                    <p id="addedprice">Delivery cost sh. 100</p>
                     <p id="finallmessage"></p>
                   </div>
                   <button class="btn btn-orange addPizza">Add Pizza</button>
