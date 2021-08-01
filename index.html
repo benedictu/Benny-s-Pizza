@@ -11,12 +11,252 @@
     <link rel="icon" href="https://images.unsplash.com/photo-1598515213381-80d77efcdf32?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGl6emElMjBpY29ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
 </head>
 <body>
-    <section class="landing">
-        <div class="overlay">
-            <nav
+    <section class=" container landing">
+        <div id="overlay">
+            <nav class=" navbar navbar-expand-sm bg-dark text-capitalize text-monospace  navbar-dark fixed-top">
+                <a class="navbar-brand" href="#">Benny's Pizza</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse align-items-center" id="collapsibleNavbar">
+                  <ul class="navbar-nav">
+                    <!--Navigation Items-->
+                    <li class="nav-item">
+                      <a class="nav-link" href="#variety">Our Varieties</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>    
+                  </ul>
+                </div>  
+              </nav>
+              <div class="mask rgba-black-light align-items-center">
+                <div class="container" id="head">
+                  <div class="row">
+                    <div class="col-md-12 mb-4 white-text text-center text">
+                      <h1 class="h1-reponsive gold-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 pulse"><strong>Benny's Pizza</strong></h1>
+                      <h5 class="text-uppercase mb-4 gold-text floater"><strong>Best Pizza Shop in Town!</strong></h5>
+                      <h2 class="text-uppercase text-danger floater text-hide"><strong>PRESS THE BUTTON BELOW TO PLACE AN ORDER</strong></h2>
+                      <a class="btn btn-orange button floater" href="#make-order"> Order Now !</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="arrow bounce"> <a href="#variety"> <img src="images/arrow.ico" alt=" arrow"width="40px"></a></div>
+          </div>
+        </div>
+            
         </div>
     </section>
 
+
+    <!--Carousel Theme-->
+    <div class="container carousel slide carousel-multi-item" data-ride="carousel" id="variety">
+        <div class="controls-top "> 
+          <h2>Our Varieties</h2>
+        </div>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img class="card-img-top" src="images/pizza1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Chicken Tikka</h5>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img class="card-img-top" src="images/pizza2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">PeriPeri Pizza</h5>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img class="card-img-top" src="images/pizza3.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Raspberry Dessert Pizza</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img class="card-img-top" src="images/pizza4.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Chicken Alfredo Pizza</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img class="card-img-top" src="images/pizza5.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Sunchoke Pizza</h5>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img class="card-img-top" src="images/pizza6.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"> Buffalo Chicken Sticks</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="container-fluid order" id="make-order">
+        <div class="order-overlay">
+          <div class="controls-top text-center" id="Order-now"> 
+            <h2>Order Here</h2>
+          </div>
+          <h2>Order your pizza here and we will deliver it to you at your door step!</h2>
+          <div class="row">
+              <div class="col-sm-5">
+                <form action="">
+                    <label for="select">Select Your Flavor</label>
+                    <select class="browser-default custom-select custom-select-md mb-3 name">
+                      <!-- <option selected value="choose">Choose your flavor</option> -->
+                      <option value="Chicken Tikka">Chicken Tikka</option>
+                      <option value="PeriPeri Pizza">PeriPeri Pizza</option>
+                      <option value="Raspberry Dessert Pizza">Raspberry Dessert Pizza</option>
+                      <option value="Chicken Alfredo Pizza">Chicken Alfredo Pizza</option>
+                      <option value="Sunchoke Pizza">Sunchoke Pizza</option>
+                      <option value="Buffalo Chicken Sticks">Buffalo Chicken Sticks</option>
+                    </select>
+                  <label for="select">Select Size</label>
+                  <select class="browser-default custom-select custom-select-md mb-3" id="size">
+                    <option selected value="0">Select size here</option>
+                    <option value="large">Large -- sh. 1200</option>
+                    <option value="medium">Medium -- sh. 950</option>
+                    <option value="small">Small -- sh. 700</option>
+                  </select>
+                  <label for="crust">Choose your favorite Crust!</label>
+                    <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+                        <option selected value="0">Type Of crust</option>
+                      <option value="Crispy">Crispy -- sh. 400</option>
+                      <option value="Stuffed">Stuffed -- sh. 350</option>
+                      <option value="Gluten-free">Gluten-free-- sh. 580</option>
+                    </select>
+                  <label for="Toppings">Select Your Toppings at 100 kes  each</label><br>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
+                      <label class="custom-control-label" for="Beef">Beef</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
+                      <label class="custom-control-label" for="pinneapples">Pineapples</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
+                      <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
+                    </div>
+                    <br><br>
+                  <button type="submit" class="btn btn-orange proceed">Proceed</button>
+                  
+                </form>
+              </div>
+              <div class="col-sm-7">
+                <div id="information">
+                  <p>Your order will be processed and delivered within two  hours of placing.</p>
+                  <p>Make sure to have the total amount required for delivery.</p>
+                  <p>Incase of any issues with an order placed, feel free to contact us thorigh our contact lines given on the contact section of this page</p>
+                  <p id="regards">Regards by Management</p>
+                </div>
+                <div class="choise">
+                  <h2>Your Order is:</h2>
+                  <div id="your-orders">
+                    <table class="table table-sm  pizzatable">
+                      <thead>
+                        <tr>
+                          <th scope="col">Name</th>
+                          <th scope="col">Size</th>
+                          <th scope="col">Crust</th>
+                          <th scope="col">Topping</th>
+                          <th scope="col">Total</th>
+                        </tr>
+                      </thead>
+                      <tbody id="ordersmade">
+                        <tr>
+                          <td id="pizzaname"></td>
+                          <td id="pizzasize"></td>
+                          <td id="pizzacrust"></td>
+                          <td id="pizzatopping"></td>
+                          <td id="totals"></td>
+                        </tr>                  
+                      </tbody>
+                    </table>
+                    <p id="pizzatotal"></p>
+                    <p id="totalbill"></p> 
+                    <p id="addedprice">Delivery will cost sh. 100</p>
+                    <p id="finallmessage"></p>
+                  </div>
+                  <button class="btn btn-orange addPizza">Add Pizza</button>
+                  <button class="btn btn-orange" id="checkout">Checkout</button>
+                  <button class="btn btn-orange deliver">Home delivery?</button>
+                </div>
+                <div class="delivery">
+                    <form action="">
+                      <div class="form-group">
+                        <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                        <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+                        <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                        <button class="btn btn-orange" id="final-order">Place An Order</button>
+                      </div>
+                    </form>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="container-fluid bg-default" id="contact">
+          <div class="controls-top "> 
+              <h2>Contact Us</h2>
+            </div>
+          <div class="row" id="contactdetails">
+            <div class="col-md-1">
+               
+            </div>
+            <div class="col-md-3 text-justify">
+              <h2>Location</h2>
+              <p>Benny's Pizza</p>
+              <p>Naivas Building | Ngong</p>
+              <p>009743,Ngong </p>
+            </div>
+            <div class="col-md-3">
+              <h2>Customer Care</h2>
+               <p>Benedictusyohana5@gmail.com</p>
+               <p>Phone: +254 758950997</p>
+            </div>
+            <div class="col-md-4">
+                <div class="mapouter">
+                  <div class="gmap_canvas">
+                    <iframe width="350" height="180" id="gmap_canvas" src="https://maps.google.com/maps?q=masaai%20mall&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                    </iframe>
+                  </div>
+                  <style>.mapouter{position:relative;text-align:right;height:180px;width:350px;}.gmap_canvas {overflow:hidden;background:none!important;height:180px;width:350px;}</style>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          <div class="row">
+            <div class="container text-center footer">
+              <p>&copy; 2021 | Benny's Pizza</p>
+            </div>
+          </div>
+      </div>
 
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
