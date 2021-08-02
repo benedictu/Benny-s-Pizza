@@ -22,7 +22,7 @@
     <section class="landing">
         <div id="overlay">
             <nav class=" navbar navbar-expand-sm bg-transparent text-capitalize text-monospace  navbar-dark fixed-top">
-                <a class="navbar-brand" href="#">Benny's Pizza</a>
+                <a class="navbar-brand " href="#">Benny's Pizza</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -40,9 +40,9 @@
               </nav>
               <div class=" text-white mask rgba-black-light align-items-center">
                 <div class="container" id="head">
-                  <div class="row">
+                  <div class="row ">
                     <div class="col-md-12 mb-4 text-monospace white-text text-center text">
-                      <h1 class="h1-reponsive gold-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 pulse"><strong>Benny's Pizza</strong></h1>
+                      <h1 class="h1-reponsive gold-text text-uppercase text-warning font-weight-bold mb-0 pt-md-5 pt-5 pulse"><strong>Benny's Pizza</strong></h1>
                       <h5 class="text-uppercase mb-4 gold-text floater"><strong>The Best Pizza online shop in Town!</strong></h5>
                       <h2 class="text-uppercase text-monospace floater "><strong>To place an Order click the button below</strong></h2>
                       <br>
@@ -95,7 +95,7 @@
       </class>
 </section>
   
-  <div class="container-fluid order" id="make-order">
+  <div class="order" id="make-order">
     <div class="order-overlay">
       <div class="controls-top text-center" id="Order-now"> 
         <h2>Place Your Order Here</h2>
@@ -156,55 +156,6 @@
               <p>Make sure to have the total amount required for delivery.</p>
               <p>Incase of any issues with an order placed, feel free to contact us thorigh our contact lines given on the contact section of this page</p>
             </div>
-            <div class="choise text-white ">
-              <h2>Your Order is:</h2>
-              <div id="your-orders">
-                <table class="table table-sm  pizzatable">
-                  <thead>
-                    <tr>
-                      <th scope="col">Name</th>
-                      <th scope="col">Size</th>
-                      <th scope="col">Crust</th>
-                      <th scope="col">Topping</th>
-                      <th scope="col">Total</th>
-                    </tr>
-                  </thead>
-                  <tbody id="ordersmade">
-                    <tr>
-                      <td id="pizzaname"></td>
-                      <td id="pizzasize"></td>
-                      <td id="pizzacrust"></td>
-                      <td id="pizzatopping"></td>
-                      <td id="totals"></td>
-                    </tr>                  
-                  </tbody>
-                </table>
-                <p id="pizzatotal"></p>
-                <p id="totalbill"></p> 
-                <p id="addedprice">Delivery cost sh. 100</p>
-                <p id="finallmessage"></p>
-              </div>
-              <button class=" bg-warning text-white btn btn-orange addPizza">Add Pizza</button>
-              <button class=" bg-danger text-white btn btn-orange" id="checkout">Checkout</button>
-              <button class=" bg-success text-white btn btn-orange deliver">Home delivery?</button>
-            </div>
-            <div class="delivery">
-                <form action="">
-                  <div class="form-group">
-                    <input type="text" id="name" class="form-control mb-3" placeholder="Name">
-                    <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
-                    <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
-                    <button class=" bg-success btn btn-orange" id="final-order">Place An Order</button>
-                  </div>
-                </form>
-              </div>
-              <div class="col-sm-7">
-                <div id="information">
-                  <p>Your order will be processed and delivered within two hour of placing.</p>
-                  <p>Make sure you have the total amout for the order during order delivery delivery.</p>
-                  <p>Incase of any comment of complaint, Please reach out to us as fast as possible.</p>
-                  <p id="regards">Regards, Management</p>
-                </div>
                 <div class="choise">
                   <h2>Your Order is:</h2>
                   <div id="your-orders">
@@ -233,9 +184,9 @@
                     <p id="addedprice">Delivery will cost sh. 100</p>
                     <p id="finallmessage"></p>
                   </div>
-                  <button class="btn btn-orange addPizza">Add Pizza</button>
-                  <button class="btn btn-orange" id="checkout">Checkout</button>
-                  <button class="btn btn-orange deliver">Home delivery?</button>
+                  <button class="bg-danger btn btn-orange addPizza">Add Pizza</button>
+                  <button class="bg-success btn btn-orange" id="checkout">Checkout</button>
+                  <button class="bg-warning  btn btn-orange deliver">Home delivery?</button>
                 </div>
                 <div class="delivery">
                     <form action="">
@@ -243,7 +194,7 @@
                         <input type="text" id="name" class="form-control mb-3" placeholder="Name">
                         <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
                         <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
-                        <button class="btn btn-orange" id="final-order">Place Order</button>
+                        <button class="bg-success btn btn-orange" id="final-order">Place Order</button>
                       </div>
                     </form>
                 </div>
@@ -251,8 +202,8 @@
           </div>
         </div>
       </div>
-    
-      <div class="container-fluid bg-default" id="contact">
+    <br>
+      <div class=" text-dark " id="contact">
           <div class="controls-top "> 
               <h2>Contact Us</h2>
             </div>
@@ -260,14 +211,14 @@
             <div class="col-md-1">
                 
             </div>
-            <div class="col-md-3 text-justify">
-              <h2>Location</h2>
-              <p>Pizza Deliciosa</p>
+            <div class="col-md-3 text-justify text-monospace">
+              <h2 class="text-warning">Location</h2>
+              <p>Benny's Pizza</p>
               <p>Milele Mall | Ngong</p>
               <p>90059, Ngong </p>
             </div>
             <div class="col-md-3">
-              <h2>Customer Care</h2>
+              <h2 class="text-warning">Customer Care</h2>
                 <p>benedictusyohana5@gmail.com</p>
                 <p>Tell: 02200346476</p> 
                 <p>Phone: +254758950997</p>
