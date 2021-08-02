@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144351462-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-144351462-1');
+</script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +21,7 @@
 <body>
     <section class="landing">
         <div id="overlay">
-            <nav class=" navbar navbar-expand-sm bg-dark text-capitalize text-monospace  navbar-dark fixed-top">
+            <nav class=" navbar navbar-expand-sm bg-transparent text-capitalize text-monospace  navbar-dark fixed-top">
                 <a class="navbar-brand" href="#">Benny's Pizza</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                   <span class="navbar-toggler-icon"></span>
@@ -53,8 +61,9 @@
     <!--Expanding Cards-->
     <br>
     <section>
-    <class class=" expanding row align-items-start">
+    <class class="  row align-items-start">
         <class  class="text-capitalize">
+          
             <div class="panel active" style="background-image: url('https://images.unsplash.com/photo-1595708684082-a173bb3a06c5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNoZWVzZSUyMHBpenphfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')">
                 <h3>Cheese</h3>
             </div>
@@ -83,66 +92,118 @@
             <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1513104890138-7c749659a591?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80')">
                 <h3>Cheese</h3>
             </div>
-          </class>
-    </section>
-
-      <div class="container-fluid order" id="make-order">
-        <div class="order-overlay">
-          <div class="controls-top text-center" id="Order-now"> 
-            <h2>Place Your Order Here</h2>
-          </div>
-          <h2>Delivery will be made ASAP!</h2>
-          <div class="row">
+      </class>
+</section>
+  
+  <div class="container-fluid order" id="make-order">
+    <div class="order-overlay">
+      <div class="controls-top text-center" id="Order-now"> 
+        <h2>Place Your Order Here</h2>
+      </div>
+      <h2>Delivery will be made ASAP!</h2>
+            <!--Form-->
+            <div class="row">
               <div class="col-sm-5">
                 <form action="">
-                    <label for="select">What's Your Taste</label>
+                    <label for="select">Select Your Flavor</label>
                     <select class="browser-default custom-select custom-select-md mb-3 name">
-                      <!-- <option selected value="choose">Choose your flavor</option> -->
-                      <option value="Cheese Pizza">Cheese Pizza</option>
-                      <option value="Meat Pizza">Meat Pizza</option>
-                      <option value="Pepperoni Pizza">Pepperoni Pizza</option>
-                      <option value="Margherita Pizza">Margherita Pizza</option>
-                      <option value="Hawaiian Pizza">Hawaiian Pizza</option>
-                      <option value="Buffalo Pizza">Buffalo Pizza</option>
+                      
+
+
+                      <!--Options-->
+                      <option value="Chicken Tikka">Chicken Tikka</option>
+                      <option value="PeriPeri Pizza">PeriPeri Pizza</option>
+                      <option value="Raspberry Dessert Pizza">Raspberry Dessert Pizza</option>
+                      <option value="Chicken Alfredo Pizza">Chicken Alfredo Pizza</option>
+                      <option value="Sunchoke Pizza">Sunchoke Pizza</option>
+                      <option value="Buffalo Chicken Sticks">Buffalo Chicken Sticks</option>
                     </select>
                   <label for="select">Select Size</label>
                   <select class="browser-default custom-select custom-select-md mb-3" id="size">
                     <option selected value="0">Select size here</option>
                     <option value="large">Large -- sh. 1200</option>
-                    <option value="medium">Medium -- sh. 950</option>
-                    <option value="small">Small -- sh. 700</option>
+                    <option value="medium">Medium -- sh. 850</option>
+                    <option value="small">Small -- sh. 600</option>
                   </select>
                   <label for="crust">Choose your favorite Crust!</label>
                     <select class="browser-default custom-select custom-select-md mb-3" id="crust">
-                        <option selected value="0">Type Of crust</option>
+                        <option selected value="0">Select your preferred crust!</option>
                       <option value="Crispy">Crispy -- sh. 200</option>
-                      <option value="Stuffed">Stuffed -- sh. 300</option>
-                      <option value="Gluten-free">Gluten-free-- sh. 500</option>
+                      <option value="Stuffed">Stuffed -- sh. 150</option>
+                      <option value="Gluten-free">Gluten-free-- sh. 180</option>
                     </select>
-                  <label for="Toppings">Select Your Toppings at 100 kes  each</label><br>
+                  <label for="Toppings">Select Your Toppings at sh. 50 each</label><br>
                     <div class="custom-control custom-checkbox custom-control-inline">
-                      <input type="checkbox" class="custom-control-input" id="beef" value="beef" name="toppings">
-                      <label class="custom-control-label" for="Beef">Beef</label>
+                      <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
+                      <label class="custom-control-label" for="Sausage">Sausage</label>
                     </div>
                     <div class="custom-control custom-checkbox custom-control-inline">
-                      <input type="checkbox" class="custom-control-input" id="Pineapples" value="Pineapples" name="toppings">
-                      <label class="custom-control-label" for="pinneapples">Pineapples</label>
+                      <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
+                      <label class="custom-control-label" for="Bacon">Bacon</label>
                     </div>
                     <div class="custom-control custom-checkbox custom-control-inline">
                       <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
                       <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
                     </div>
                     <br><br>
-                  <button type="submit" class="bg-danger text-white btn btn-orange proceed">Proceed</button>
+                  <button type="submit" class="btn btn-orange proceed">Proceed</button>
                   
+                </form>
+          </div>
+          <div class="col-sm-7">
+            <div id="information">
+              <p>Your order will be processed and delivered within two  hours of placing.</p>
+              <p>Make sure to have the total amount required for delivery.</p>
+              <p>Incase of any issues with an order placed, feel free to contact us thorigh our contact lines given on the contact section of this page</p>
+            </div>
+            <div class="choise">
+              <h2>Your Order is:</h2>
+              <div id="your-orders">
+                <table class="table table-sm  pizzatable">
+                  <thead>
+                    <tr>
+                      <th scope="col">Name</th>
+                      <th scope="col">Size</th>
+                      <th scope="col">Crust</th>
+                      <th scope="col">Topping</th>
+                      <th scope="col">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody id="ordersmade">
+                    <tr>
+                      <td id="pizzaname"></td>
+                      <td id="pizzasize"></td>
+                      <td id="pizzacrust"></td>
+                      <td id="pizzatopping"></td>
+                      <td id="totals"></td>
+                    </tr>                  
+                  </tbody>
+                </table>
+                <p id="pizzatotal"></p>
+                <p id="totalbill"></p> 
+                <p id="addedprice">Delivery cost sh. 100</p>
+                <p id="finallmessage"></p>
+              </div>
+              <button class="btn btn-orange addPizza">Add Pizza</button>
+              <button class="btn btn-orange" id="checkout">Checkout</button>
+              <button class="btn btn-orange deliver">Home delivery?</button>
+            </div>
+            <div class="delivery">
+                <form action="">
+                  <div class="form-group">
+                    <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                    <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+                    <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                    <button class="btn btn-orange" id="final-order">Place An Order</button>
+                  </div>
                 </form>
               </div>
               <div class="col-sm-7">
                 <div id="information">
-                  <p>Your order will be processed and delivered within two  hours of placing.</p>
-                  <p>Make sure to have the total amount required for delivery.</p>
-                  <p>Incase of any issues with an order placed, feel free to contact us thorigh our contact lines given on the contact section of this page</p>
-                  <p id="regards">Regards by Management</p>
+                  <p>Your order will be processed and delivered within two hour of placing.</p>
+                  <p>Make sure you have the total amout for the order during order delivery delivery.</p>
+                  <p>Incase of any comment of complaint, Please reach out to us as fast as possible.</p>
+                  <p id="regards">Regards, Management</p>
                 </div>
                 <div class="choise">
                   <h2>Your Order is:</h2>
@@ -153,7 +214,7 @@
                           <th scope="col">Name</th>
                           <th scope="col">Size</th>
                           <th scope="col">Crust</th>
-                          <th scope="col">Topping</th>
+                          <th scope="col">Toppings</th>
                           <th scope="col">Total</th>
                         </tr>
                       </thead>
@@ -169,7 +230,7 @@
                     </table>
                     <p id="pizzatotal"></p>
                     <p id="totalbill"></p> 
-                    <p id="addedprice">Delivery cost sh. 100</p>
+                    <p id="addedprice">Delivery will cost sh. 100</p>
                     <p id="finallmessage"></p>
                   </div>
                   <button class="btn btn-orange addPizza">Add Pizza</button>
@@ -182,7 +243,7 @@
                         <input type="text" id="name" class="form-control mb-3" placeholder="Name">
                         <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
                         <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
-                        <button class="btn btn-orange" id="final-order">Place An Order</button>
+                        <button class="btn btn-orange" id="final-order">Place Order</button>
                       </div>
                     </form>
                 </div>
@@ -197,23 +258,24 @@
             </div>
           <div class="row" id="contactdetails">
             <div class="col-md-1">
-               
+                
             </div>
             <div class="col-md-3 text-justify">
               <h2>Location</h2>
-              <p>Benny's Pizza</p>
-              <p>Naivas Building | Ngong</p>
-              <p>009743,Ngong </p>
+              <p>Pizza Deliciosa</p>
+              <p>Milele Mall | Ngong</p>
+              <p>90059, Ngong </p>
             </div>
             <div class="col-md-3">
               <h2>Customer Care</h2>
-               <p>Benedictusyohana5@gmail.com</p>
-               <p>Phone: +254 758950997</p>
+                <p>benedictusyohana5@gmail.com</p>
+                <p>Tell: 02200346476</p> 
+                <p>Phone: +254758950997</p>
             </div>
             <div class="col-md-4">
                 <div class="mapouter">
                   <div class="gmap_canvas">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15954.787024646164!2d36.65388822671248!3d-1.3585740341461345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sngong%20naivas%20supermarket%20ngong!5e0!3m2!1sen!2ske!4v1627820072000!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31909.579027177366!2d36.65702778997542!3d-1.3581971007241496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f03217694f4df%3A0x565f5e63e2589f76!2sNgong%20Milele%20Mall!5e0!3m2!1sen!2ske!4v1627905353489!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                   </div>
                   <style>.mapouter{position:relative;text-align:right;height:180px;width:350px;}.gmap_canvas {overflow:hidden;background:none!important;height:180px;width:350px;}</style>
                 </div>
@@ -222,14 +284,15 @@
           </div>
           <div class="row">
             <div class="container text-center footer">
-              <p>&copy; 2021 | Benny's Pizza</p>
+              <p>&copy; 2021 | Benny's Pizza </p>
             </div>
           </div>
       </div>
-
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      
+      <script src="js/mdb.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <script src="script.js"></script>
 </body>
 </html>
