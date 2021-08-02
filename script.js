@@ -28,11 +28,11 @@ function Getpizza( name,size,crust,topping, total ){
            console.log(price);
          break;
          case "medium":
-           price = 850;
+           price = 950;
            console.log("The price is "+price);
          break;
          case "small":
-           price = 600;
+           price = 700;
            console.log(price);
          default:
            console.log("error"); 
@@ -72,9 +72,6 @@ function Getpizza( name,size,crust,topping, total ){
     // proceed button
 $(document).ready(function(){
     // $("button.proceed").click(function(){
-    //   $("button.proceed").hide();
-    //   $("#information").hide();
-    //   $("div.choise").slideDown(1000);
     // });
     $("button.proceed").click(function(event){
      let pname = $(".name option:selected").val();
@@ -95,11 +92,11 @@ $(document).ready(function(){
          console.log(price);
        break;
        case "medium":
-         price = 850;
+         price = 950;
          console.log("The price is "+price);
        break;
        case "small":
-         price = 600;
+         price = 700;
          console.log(price);
        default:
          console.log("error"); 
@@ -146,7 +143,7 @@ $(document).ready(function(){
       $("#pizzacrust").html($("#crust option:selected").val());
       $("#pizzatopping").html(ptopping.join(", "));
       $("#totals").html(total);
-    // Checkout button
+    // Checkout 
     $("button#checkout").click(function(){ 
       $("button#checkout").hide();
       $("button.addPizza").hide();
@@ -156,7 +153,7 @@ $(document).ready(function(){
       $("#pizzatotal").append("Your bill is sh. "+checkoutTotal);
     });
 
-    // home delivery button
+    // home delivery 
     $("button.deliver").click(function(){
       $(".pizzatable").hide();
       $(".choise h2").hide();
