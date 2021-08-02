@@ -23,7 +23,7 @@
         flex: 0.5;
         margin: 10px;
         position: relative;
-        transition: flex 0.75 ease-in;
+        transition: flex 0.7s ease-in;
          
     }
 
@@ -137,18 +137,8 @@
     .d-flex{
         display: flex !important;
     }
-    .arrow
-    {
-        position: relative;
-        left: 50%;
-        top: 90%;
-        margin-left:-20px;
-        
-    }
+
     
-    .bounce {
-        animation: bounce 2s infinite;
-    }
     
     @keyframes bounce {
         0%, 20%, 50%, 80%, 100% {
@@ -169,7 +159,7 @@
     }
     .order{
         background-attachment: fixed;
-        background-image: url("../images/slider2.jpg");
+        background-image: url('https://images.unsplash.com/photo-1615719413546-198b25453f85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1576&q=80');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
