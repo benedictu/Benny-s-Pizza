@@ -45,14 +45,21 @@ function Getpizza( name,size,crust,topping, total ){
             crust_price = 200;
           break;
           case "Stuffed":
-            crust_price = 150;
+            crust_price = 300;
           break;
           case "Gluten-free":
-            crust_price = 180;
+            crust_price = 500;
           break;
           default:
             console.log("No price"); 
-        }
+        }   #about-us .content{
+          padding: 65px 50px 85px;
+          width: 100%;
+          background-color: #ffa500;
+          float:right;
+          text-align: justify;
+          overflow-x: hidden;
+      }
         let topping_value = ptopping.length*50;
         console.log("toppins value" + topping_value);
         total = price + crust_price + topping_value;
@@ -174,7 +181,7 @@ $(document).ready(function(){
       $(".delivery").hide();
       $("button#final-order").hide();
       let deliceryamount= checkoutTotal+100;
-      console.log("Final Bill is: "+deliceryamount);
+      console.log("Final Bill is: "+deliveryamount);
       let person = $("input#name").val();
       let phone = $("input#phone").val();
       let location = $("input#location").val();
