@@ -7,9 +7,9 @@
     font-family: 'Eczar', serif;
     }
 
-    container{
+    .container{
       display: flex;
-      width: 90vw;
+      width: 70vw;
     }
 
     .panel{
@@ -23,7 +23,7 @@
         flex: 0.5;
         margin: 10px;
         position: relative;
-        transition: flex 0.7s ease-in;
+        transition: flex s ease-in;
          
     }
 
@@ -33,7 +33,7 @@
         bottom: 20px;
         left: 20px;
         margin: 0;
-        opacity: 0;
+        opacity: 3;
     }
 
     .panel.active {
