@@ -8,20 +8,6 @@ function Getpizza( name,size,crust,topping, total ){
   this.total = total;
 }
  
-const panels = document.querrySelectorAll('.panel')
-  
-  panels.forEach(panel => {
-      panel.addEventListener('click', () => {
-        removeActiveClasses()
-        panel.classList.Add('active')
-      })
-  })
-
-function removeActiveClasses() {
-  panels.forEach(panel => {
-      panel.classListremove('active')
-  })
-}
 // proceed button
 $(document).ready(function(){
   // $("button.proceed").click(function(){
